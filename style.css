@@ -1,0 +1,208 @@
+/* =========================================
+   POLYVPN WEBSITE
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    background-color: #263aa8;
+
+    /* BLUE CHECKERBOARD */
+    background-image:
+        linear-gradient(
+            45deg,
+            #465ac7 25%,
+            transparent 25%,
+            transparent 75%,
+            #465ac7 75%
+        ),
+        linear-gradient(
+            45deg,
+            #465ac7 25%,
+            transparent 25%,
+            transparent 75%,
+            #465ac7 75%
+        );
+
+    background-size: 74px 74px;
+    background-position: 0 0, 37px 37px;
+
+    font-family: "Comic Sans MS", "Trebuchet MS", sans-serif;
+    color: white;
+}
+
+
+/* =========================================
+   MAIN PAGE
+   ========================================= */
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+
+    padding-top: 5px;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   TOP LOGO
+   ========================================= */
+
+.top-logo {
+    display: block;
+
+    width: 290px;
+    height: auto;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   INTRO TEXT
+   ========================================= */
+
+.intro {
+    margin-top: 5px;
+}
+
+.intro p {
+    margin: 18px 0;
+
+    font-size: 42px;
+    font-weight: bold;
+
+    color: white;
+
+    /* Black outline around text */
+    -webkit-text-stroke: 2px black;
+
+    text-shadow:
+        2px 2px 0 black,
+        -2px 2px 0 black,
+        2px -2px 0 black,
+        -2px -2px 0 black;
+}
+
+
+/* =========================================
+   DOWNLOAD AREA
+   ========================================= */
+
+.download {
+    margin-top: 85px;
+}
+
+.download-text {
+    font-size: 40px;
+    margin: 0 0 20px 0;
+
+    color: white;
+
+    text-shadow:
+        2px 2px 0 #222,
+        -2px 2px 0 #222,
+        2px -2px 0 #222,
+        -2px -2px 0 #222;
+}
+
+
+/* Temporary download button */
+
+.download-button {
+    display: inline-block;
+
+    padding: 12px 30px;
+
+    background: #dddddd;
+    border: 4px outset #ffffff;
+
+    color: #111;
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.download-button:hover {
+    background: #eeeeee;
+}
+
+.download-button:active {
+    border-style: inset;
+}
+
+
+/* =========================================
+   MIDDLE LOGO / CAT
+   ========================================= */
+
+.middle-logo {
+    position: relative;
+
+    width: 420px;
+    height: 330px;
+
+    margin: 5px auto 0 auto;
+}
+
+.cat {
+    position: absolute;
+
+    width: 190px;
+    height: auto;
+
+    left: 115px;
+    top: 0;
+
+    z-index: 1;
+}
+
+.middle-logo-image {
+    position: absolute;
+
+    width: 300px;
+    height: auto;
+
+    left: 60px;
+    top: 115px;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   DISCLAIMER
+   ========================================= */
+
+footer {
+    margin-top: 0;
+
+    padding: 5px 10px 10px 10px;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    color: white;
+
+    /* Red letters with white outline */
+    -webkit-text-stroke: 1px red;
+
+    text-shadow:
+        2px 2px 0 red,
+        -2px 2px 0 red,
+        2px -2px 0 red,
+        -2px -2px 0 red;
+}
